@@ -1,1 +1,213 @@
-<h1> Im Plant</h1>
+<!-- index.html -->
+            <!DOCTYPE html>
+            <html lang="es">
+              <head>
+                <meta charset="UTF-8" />
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+                />
+                <title>Página con Popup de Inicio de Sesión y Registro</title>
+                <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+                integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+              />
+                <link rel="stylesheet" href="styles.css" />
+              </head>
+              <body>
+                <!-- Encabezado -->
+                <div class="contenedor-header">
+                    <header>
+                      <div class="logo">
+                        <a href="#"><img src="img/logo.jpg" alt=""></a>
+                      </div>
+                      <nav id="nav" >
+                        <ul>
+                          <li><a href="#info-ceriman" onclick="Seleccionar()">Cuidado Ceriman</a></li>
+                          <li><a href="#info-bonsai" onclick="Seleccionar()">Cuidado Bonsai</a></li>
+                          <li><a href="#ceriman" onclick="Seleccionar()">Ceriman</a></li>
+                          <li><a href="#bonsai" onclick="Seleccionar()">Bonsai</a></li>
+                          <li><a href="#loginPopup" onclick="Seleccionar()">Iniciar Secion</a></li>
+                          <li><a href="#registerPopup" onclick="Seleccionar()">Registrarse</a></li>
+                        </ul>
+                      </nav>
+                      <div class="nav-responsive" onclick="mostrarOculatMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                      </div>
+                    </header>
+                  </div>
+                
+
+                <!-- Cuerpo de la página -->
+                <section id="ceriman" class="inicio">
+                    <div class="contenido-banner">
+                      <div class="contenedor-img">
+                        <img src="img/c1.jpg" alt="" />
+                      </div>
+                      <div class="tex">
+                        <h1>Matias Villalba</h1>
+                      <h2> La Cerimán, también conocida como Monstera deliciosa o “planta de queso suizo” por los agujeros y cortes naturales en sus hojas, es una planta tropical de hojas grandes, brillantes y de un verde oscuro. Esta especie es muy popular como planta de interior por su estética tropical y facilidad de cuidado.
+
+                        Origen:
+                        Es nativa de las selvas tropicales de América Central y el sur de México, donde crece naturalmente en condiciones de humedad alta y sombra parcial.
+                        
+                        Características:
+                        
+                        Altura: En la naturaleza, puede alcanzar hasta 20 metros trepando en árboles o superficies. En interiores, puede llegar a unos 2-3 metros con buen soporte.
+                        Hojas: Sus hojas son grandes y desarrollan perforaciones (fenestraciones) que, se cree, ayudan a soportar mejor los vientos de la selva y a recibir más luz.</h2>
+                      </div>
+                      
+                    </div>
+                  </section>
+
+                  <section class="slider">
+                    <div class="carousel-box">
+                        <div class="carousel">
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+1" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+2" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+3" alt="Imagen 3">
+                            </div>
+                        </div>
+                    </div>
+                  </section>
+                  
+                <section class="info" id="info-ceriman">
+                    <div class="titulo"><h2>CUIDADO DE LA PLANTA</h2></div>
+                    <div class="agua">
+                        <div class="img"><img src="img/r1.jpg" alt=""></div>
+                        <div class="texto">
+                            <h2>RIEGO</h2>
+                            <p>La Cerimán necesita riego moderado. Se recomienda regarla una o dos veces por semana, dejando que la capa superior del suelo se seque ligeramente entre riegos. En invierno, reduce la frecuencia de riego.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tierra">
+                        <div class="texto">
+                            <h2>TIERRA</h2>
+                            <p>Prefiere una tierra fértil con buen drenaje. Una mezcla de tierra para macetas con perlita o corteza de pino le proporciona un sustrato adecuado</p>
+                        </div>
+                        <div class="img"><img src="img/t1.jpg" alt=""></div>
+                    </div>
+
+                    <div class="sol">
+                        <div class="img"><img src="img/s1.jpg" alt=""></div>
+                        <div class="texto">
+                            <h2>LUZ</h2>
+                            <p> Necesita luz indirecta brillante, aunque puede adaptarse a condiciones de luz media. Evita la exposición directa al sol, ya que puede quemar sus hojas.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="bonsai" class="inicio">
+                    <div class="contenido-banner">
+                      <div class="contenedor-img">
+                        <img src="img/c1.jpg" alt="" />
+                      </div>
+                      <div class="tex">
+                        <h1>Matias Villalba</h1>
+                      <h2> La Cerimán, también conocida como Monstera deliciosa o “planta de queso suizo” por los agujeros y cortes naturales en sus hojas, es una planta tropical de hojas grandes, brillantes y de un verde oscuro. Esta especie es muy popular como planta de interior por su estética tropical y facilidad de cuidado.
+
+                        Origen:
+                        Es nativa de las selvas tropicales de América Central y el sur de México, donde crece naturalmente en condiciones de humedad alta y sombra parcial.
+                        
+                        Características:
+                        
+                        Altura: En la naturaleza, puede alcanzar hasta 20 metros trepando en árboles o superficies. En interiores, puede llegar a unos 2-3 metros con buen soporte.
+                        Hojas: Sus hojas son grandes y desarrollan perforaciones (fenestraciones) que, se cree, ayudan a soportar mejor los vientos de la selva y a recibir más luz.</h2>
+                      </div>
+                      
+                    </div>
+                  </section>
+                  <section class="slider">
+                    <div class="carousel-box">
+                        <div class="carousel">
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+1" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+2" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+3" alt="Imagen 3">
+                            </div>
+                        </div>
+                    </div>
+                  </section>
+                <section class="info" id="info-bonsai">
+                    <div class="titulo"><h2>CUIDADO DE LA PLANTA</h2></div>
+                    <div class="agua">
+                        <div class="img"><img src="img/r1.jpg" alt=""></div>
+                        <div class="texto">
+                            <h2>RIEGO</h2>
+                            <p>La Cerimán necesita riego moderado. Se recomienda regarla una o dos veces por semana, dejando que la capa superior del suelo se seque ligeramente entre riegos. En invierno, reduce la frecuencia de riego.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tierra">
+                        <div class="texto">
+                            <h2>TIERRA</h2>
+                            <p>Prefiere una tierra fértil con buen drenaje. Una mezcla de tierra para macetas con perlita o corteza de pino le proporciona un sustrato adecuado</p>
+                        </div>
+                        <div class="img"><img src="img/t1.jpg" alt=""></div>
+                    </div>
+
+                    <div class="sol">
+                        <div class="img"><img src="img/s1.jpg" alt=""></div>
+                        <div class="texto">
+                            <h2>LUZ</h2>
+                            <p> Necesita luz indirecta brillante, aunque puede adaptarse a condiciones de luz media. Evita la exposición directa al sol, ya que puede quemar sus hojas.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Ventana Popup de Iniciar Sesión -->
+                <div id="loginPopup" class="popup">
+                  <div class="popup-content">
+                    <a href="#" class="close">&times;</a>
+                    <h2>Iniciar Sesión</h2>
+                    <form>
+                      <label for="loginUsername">Usuario:</label>
+                      <input type="text" id="loginUsername" required />
+
+                      <label for="loginPassword">Contraseña:</label>
+                      <input type="password" id="loginPassword" required />
+
+                      <button type="submit">Entrar</button>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- Ventana Popup de Registro -->
+                <div id="registerPopup" class="popup">
+                  <div class="popup-content">
+                    <a href="#" class="close">&times;</a>
+                    <h2>Registrarse</h2>
+                    <form>
+                      <label for="registerUsername">Usuario:</label>
+                      <input type="text" id="registerUsername" required />
+
+                      <label for="registerPassword">Contraseña:</label>
+                      <input type="password" id="registerPassword" required />
+
+                      <button type="submit">Registrar</button>
+                    </form>
+                  </div>
+                </div>
+              </body>
+            </html>
+          </body>
+        </html>
+      </body>
+    </html>
+  </body>
+</html>
